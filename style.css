@@ -759,3 +759,98 @@ body {
     }
 }
 }
+
+/* FIXES FOR EXACT RENDERFOREST MATCH */
+
+/* Vanishing Buzz Section - Add background image and proper layout */
+.vanishing-buzz {
+    background: url('https://hosting.renderforestsites.com/32756282/1552609/media/c78fbfb2827aeaa3e8cb2427f9792af9.jpg') no-repeat center/cover;
+    padding: 80px 0;
+    position: relative;
+}
+
+.vanishing-buzz::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(244, 244, 244, 0);
+}
+
+/* Video Section - Add honeycomb background */
+.video-section {
+    background: url('https://hosting.renderforestsites.com/32756282/1552609/media/3d47699bad41021f8ceb66dc4e52e2c2.jpg') no-repeat center/cover;
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.video-section h2,
+.video-section .quote,
+.video-section .btn {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 50px 60px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Bee Farming Section - Add proper styling */
+.bee-farming {
+    background: linear-gradient(rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5)),
+                url('https://static.rfstat.com/renderforest/images/website_maker_images/components/component-images/feature28-2.0.0.jpg'} no-repeat center/cover;
+    padding: 80px 0;
+}
+
+.bee-farming .steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.bee-farming .step {
+    background: #440EFC;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bee-farming .step:hover,
+.bee-farming .step.active {
+    background: #FE07FF;
+    transform: scale(1.05);
+}
+
+.bee-farming .directions {
+    background: #440EFC;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.bee-farming .directions h3 {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
