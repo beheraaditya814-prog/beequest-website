@@ -864,6 +864,14 @@ body {
     flex-wrap: wrap;
 }
 
+.bee-farming .steps {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+}
+
 .bee-farming .step {
     flex: 1;
     min-width: 150px;
