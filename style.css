@@ -815,7 +815,7 @@ body {
 }
 
 .bee-farming .steps {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -887,5 +887,4 @@ body {
 }
 
 .bee-farming .arrow {
-    display: none;
-}
+    display: none !important;}
