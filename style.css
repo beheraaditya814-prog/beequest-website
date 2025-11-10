@@ -896,3 +896,85 @@ body {
 
 .bee-farming .arrow {
     display: none !important;}
+
+
+/* Interactive Features - Chat Popup, WhatsApp, Forms, Animations */
+
+/* WhatsApp and Social Button Styles */
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.btn-whatsapp:hover {
+  background: #128C7E;
+}
+
+/* Chat Popup Styles */
+#chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  padding: 18px 22px 18px 18px;
+  max-width: 320px;
+  font-family: inherit;
+}
+
+/* Entry Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.2s forwards;
+}
+@keyframes fadeInAnimation {
+  to { opacity: 1; }
+}
+
+/* Enhanced Contact Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 18px;
+  background: #f7f7f7;
+  border: 1px solid #d0d0e6;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: box-shadow 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2d1b69;
+  box-shadow: 0 0 6px rgba(45,27,105,0.15);
+  outline: none;
+}
+.contact-form button[type="submit"] {
+  background: linear-gradient(135deg, #fccb06 0%, #fc9906 100%);
+  color: #1a0b4a;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+.contact-form button[type="submit"]:hover {
+  background: linear-gradient(135deg, #fc9906 0%, #fccb06 100%);
+}
+
+#form-feedback {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
